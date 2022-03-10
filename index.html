@@ -1,0 +1,1000 @@
+<div class="loader-container" style="z-index: 2000">
+    <div id="preloader_1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="La Woon Htet Aung" />
+        <meta name="title" content="Meteor Agency">
+        <meta name="description" content="Web Design Kit">
+        <title>Web Design Kit</title>
+
+<!--Favicon -->
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/responsive-tabs.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <style>
+        .loader-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+        }
+
+        #preloader_1 {
+            position: relative;
+        }
+
+        #preloader_1 span {
+            display: block;
+            bottom: 0px;
+            width: 9px;
+            height: 5px;
+            background: #9b59b6;
+            position: absolute;
+            animation: preloader_1 1.5s infinite ease-in-out;
+        }
+
+        #preloader_1 span:nth-child(2) {
+            left: 11px;
+            animation-delay: .2s;
+
+        }
+
+        #preloader_1 span:nth-child(3) {
+            left: 22px;
+            animation-delay: .4s;
+        }
+
+        #preloader_1 span:nth-child(4) {
+            left: 33px;
+            animation-delay: .6s;
+        }
+
+        #preloader_1 span:nth-child(5) {
+            left: 44px;
+            animation-delay: .8s;
+        }
+
+        @keyframes preloader_1 {
+            0% {
+                height: 5px;
+                transform: translateY(0px);
+                background: #9b59b6;
+            }
+
+            25% {
+                height: 30px;
+                transform: translateY(15px);
+                background: #3498db;
+            }
+
+            50% {
+                height: 5px;
+                transform: translateY(0px);
+                background: #9b59b6;
+            }
+
+            100% {
+                height: 5px;
+                transform: translateY(0px);
+                background: #9b59b6;
+            }
+        }
+    </style>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar" data-aos="fade-down" data-aos-delay="1500">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"><i class="fas fa-meteor"></i>Meteor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon fas fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                        <a href="javascript:void(0)" class="dark-mode"><i class="far fa-moon" id="theme-button"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home  -->
+        <section class="home__container" id="home">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12 col-lg-6">
+                        <div class="home__content" data-aos="fade-right" data-aos-delay="800">
+                            <h1 class="home__title">Beautify Landing <br>
+                                page Kit for Startup
+                            </h1>
+                            <p class="home__description">Ad quisquam necessitatibus, excepturi voluptatem quia
+                                voluptates minus distinctio perferendis iure, tempora aliquam! Ex!</p>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-blue mb-sm-3">Start Free Trial</a>
+                                <a href="#" class="btn btn-ghost mb-sm-3">Check Features</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 text-center mb-lg-5" data-aos="fade-left" data-aos-delay="1200">
+                        <img src="img/team_meeting_.png" class="home__img">
+                    </div>
+                </div>
+            </div>
+            <a href="#services" class="arrow down-arrow infinite "data-aos="bounce"><i class="fas fa-arrow-down"></i></a>
+            <a href="#home" class="arrow up-arrow"><i class="fas fa-arrow-up"></i></a>
+        </section>
+
+
+        <!-- Services -->
+        <section class="service__container container  mb-5" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-5">
+                        <div class="text-center mb-5">
+                            <h3 class="section__title">Services</h3>
+                        </div>
+                    </div>
+                    <!--Services Card 1 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="600">
+                        <div class="services__card text-center">
+                            <div class="services__img">
+                                <img src="img/free-sticker-svgrepo-com.svg" class="service__img">
+                            </div>
+                            <h4>Free Trial</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+                    <!--Services Card 2 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="800">
+                        <div class="services__card text-center">
+                            <div class="services__img"> <img src="img/dollar-secure-payment-svgrepo-com.svg"
+                                    class="service__img">
+                            </div>
+                            <h4>Secure Payment</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+                    <!--Services Card 3 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="1200">
+                        <div class="services__card text-center">
+                            <div class="services__img"> <img src="img/setting-tools-svgrepo-com.svg"
+                                    class="service__img">
+                            </div>
+                            <h4>No Setup</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+                    <!--Services Card 4 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="1500">
+                        <div class="services__card text-center">
+                            <div class="services__img"> <img src="img/customer-service-help-svgrepo-com.svg"
+                                    class="service__img">
+                            </div>
+                            <h4>24th support</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+                    <!--Services Card 5 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="600">
+                        <div class="services__card text-center">
+                            <div class="services__img"> <img src="img/browser-svgrepo-com.svg" class="service__img">
+                            </div>
+                            <h4>Quick Access</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+                    <!--Services Card 6 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="800">
+                        <div class="services__card text-center">
+                            <div class="services__img"> <img src="img/tracking-track-svgrepo-com.svg"
+                                    class="service__img">
+                            </div>
+                            <h4>Track Anywhere</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+                    <!--Services Card 7 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="1200">
+                        <div class="services__card text-center">
+                            <div class="services__img"> <img src="img/user-svgrepo-com.svg" class="service__img">
+                            </div>
+                            <h4>Manger User</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+                    <!--Services Card 8 -->
+                    <div class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="1500">
+                        <div class="services__card text-center">
+                            <div class="services__img"> <img src="img/up-top-svgrepo-com.svg" class="service__img">
+                            </div>
+                            <h4>Daily Update</h4>
+                            <p>
+                                Class aptent is not conub rep tos
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Success -->
+
+        <section class="success__container mt-5" data-aos="zoom-in">
+            <div class="container">
+                <div class="row py-5">
+                    <!-- 1 -->
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="success__card">
+                            <i class="far fa-envelope"></i>
+                            <h3 class="counter">446</h3>
+                            <h5>+Projects</h5>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="success__card">
+                            <i class="far fa-star"></i>
+                            <h3 class="counter">1200</h3>
+                            <h5>+Videos</h5>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="success__card">
+                            <i class="far fa-edit"></i>
+                            <h3 class="counter">990</h3>
+                            <h5>+Awards</h5>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-md-3 col-sm-6 text-center mb-4">
+                        <div class="success__card">
+                            <i class="fas fa-signal"></i>
+                            <h3 class="counter">1232</h3>
+                            <h5>+Clients</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- About -->
+        <section class="about__container light mb-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-5">
+                        <div class="text-center mb-5" data-aos="fade-down" data-aos-delay="600">
+                            <h3 class="section__title">About Us</h3>
+                        </div>
+                    </div>
+                    <!--About Card 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3" data-aos="fade-down" data-aos-delay="800">
+                        <div class="about__card text-center">
+                            <img src="img/rocket-svgrepo-com.svg" class="about__img">
+                            <h4 class="about__title mb-4 mt-2">
+                                Target
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure.</p>
+                        </div>
+                    </div>
+                    <!--About Card 2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3" data-aos="fade-down" data-aos-delay="1200">
+                        <div class="about__card text-center">
+                            <img src="img/work-suitcase-svgrepo-com.svg" class="about__img">
+                            <h4 class="about__title mb-4 mt-2">
+                                Work
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure.</p>
+                        </div>
+                    </div>
+                    <!--About Card 3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3" data-aos="fade-down" data-aos-delay="1500">
+                        <div class="about__card text-center">
+                            <img src="img/heart-svgrepo-com.svg" class="about__img">
+                            <h4 class="about__title mb-4 mt-2">
+                                Hope
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="team__container" id="about text-warning">
+            <div class="team__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 mt-5 mb-5">
+                            <div id="team-left" data-aos="fade-right" data-aos-delay="800">
+                                <div class="team__title mb-3">
+                                    <h2>Meet our <br><span class="team__color"> Awesome</span> Team</h2>
+                                </div>
+                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                                    iure.</p>
+                                <div class="social-icons d-flex">
+                                    <i class="fab fa-facebook-f social-icon"></i>
+                                    <i class="fab fa-twitter social-icon"></i>
+                                    <i class="fab fa-linkedin-in social-icon"></i>
+                                    <i class="fab fa-youtube social-icon"></i>
+                                    <i class="fab fa-instagram social-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 d-flex" data-aos="fade-left" data-aos-delay="1200">
+                            <div id="team-members" class="owl-carousel owl-theme">
+                                <!-- Team member 1 -->
+                                <div class="team__member">
+                                    <img src="img/team-1.jpg" class="team__img">
+                                    <div class="team-member-overlay">
+                                        <div class="team-member-info text-center">
+                                            <h4>
+                                                Adriana Jones
+                                            </h4>
+                                            <p>Web Analatics</p>
+                                            <ul class="social-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Team member 2 -->
+                                <div class="team__member">
+                                    <img src="img/team-2.jpg" class="team__img">
+                                    <div class="team-member-overlay">
+                                        <div class="team-member-info text-center">
+                                            <h4>
+                                                Lucio Quitzon
+                                            </h4>
+                                            <p>Senior Developer</p>
+                                            <ul class="social-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Team member 3 -->
+                                <div class="team__member">
+                                    <img src="img/team-3.jpg" class="team__img">
+                                    <div class="team-member-overlay">
+                                        <div class="team-member-info text-center">
+                                            <h4>
+                                                Montana Beatty
+                                            </h4>
+                                            <p>Art Director</p>
+                                            <ul class="social-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Team member 4 -->
+                                <div class="team__member">
+                                    <img src="img/team-4.jpg" class="team__img">
+                                    <div class="team-member-overlay">
+                                        <div class="team-member-info text-center">
+                                            <h4>
+                                                Orion Hessel
+                                            </h4>
+                                            <p>Marketing & CEO</p>
+                                            <ul class="social-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Team member 5 -->
+                                <div class="team__member">
+                                    <img src="img/team-5.jpg" class="team__img">
+                                    <div class="team-member-overlay">
+                                        <div class="team-member-info text-center">
+                                            <h4>
+                                                Retha Kling
+                                            </h4>
+                                            <p>Founder</p>
+                                            <ul class="social-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="progress-bars">
+                        <div class="row">
+                            <!-- Progress bar 1 -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="skill">
+                                    <h4>Web Design</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="95"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span>
+                                                95%
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Progress bar 2 -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="skill">
+                                    <h4>Photoshop Lightroom</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span>
+                                                75%
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Progress bar 3 -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="skill">
+                                    <h4>Web Development</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span>
+                                                75%
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Progress bar 4 -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="skill">
+                                    <h4>Digital & Social</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span>
+                                                90%
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Manager area -->
+        <section class="manager-area" id="about">
+            <div class="manager-background">
+                <div class="container text-center" data-aos="zoom-out-down" data-aos-delay="600">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <i class="fa fa-edit fa-4x mb-5"></i>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad eos velit aperiam vel
+                                ducimus inventore quia temporibus. Laborum, aliquam? </p>
+                            <h5>Daniel Edward</h5>
+                            <p class="word">Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="feature__container mb-5" id="features">
+            <div class="container ">
+                <div class="text-center mt-5" data-aos="zoom-out" data-aos-delay="600">
+                    <h3 class="section__title mb-3">Awesome Feature</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas voluptatem quod assumenda
+                        aut nam.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 mt-5">
+                        <div class="mockup" data-aos="fade-right" data-aos-delay="1200">
+                            <img src="img/02.png" class="feature__img">
+                        </div>
+                    </div>
+                    <!-- feature content 1 -->
+                    <div class="col-md-12 col-lg-6 mt-5">
+                        <div class="feature__contents" data-aos="fade-left" data-aos-delay="1500">
+                            <!-- feature content 1 -->
+                            <div class="feature__content">
+                                <div class="icon">
+                                    <i class="fas fa-pen-square feature__icon"></i>
+                                </div>
+                                <div class="feature__description">
+                                    <h5>Creative Design</h5>
+                                    <div class="mb-2">Lorem ipsum dolor sit</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium nihil
+                                        eius
+                                        tempora, illum laborum?</p>
+                                </div>
+                            </div>
+                            <!-- feature content 2 -->
+                            <div class="feature__content mt-2">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn feature__icon"></i>
+                                </div>
+                                <div class="feature__description">
+                                    <h5>Easy Customization</h5>
+                                    <div class="mb-2">Lorem ipsum dolor sit</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium nihil
+                                        eius
+                                        tempora, illum laborum?</p>
+                                </div>
+                            </div>
+                            <!-- feature content 3 -->
+                            <div class="feature__content mt-2">
+                                <div class="icon">
+                                    <i class="fa fa-cog feature__icon"></i>
+                                </div>
+                                <div class="feature__description">
+                                    <h5>Minimal Design</h5>
+                                    <div class="mb-2">Lorem ipsum dolor sit</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium nihil
+                                        eius
+                                        tempora, illum laborum?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- Tab -->
+
+        <section id="features" class="tabs light">
+            <div class="content-box-md">
+                <div id="tab" data-aos="zoom-out" data-aos-delay="600">
+                    <ul class="text-center py-5">
+                        <li><a href="#tab-1" class="tab-list">Responsive</a></li>
+                        <li><a href="#tab-2" class="tab-list">Optimization</a></li>
+                        <li><a href="#tab-3" class="tab-list">Web Design</a></li>
+                        <li><a href="#tab-4" class="tab-list">Development</a></li>
+                    </ul>
+                    <!-- Tab 1 -->
+                    <div id="tab-1" class="tab ">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <img src="img/indoor-photo-satisfied-teenage-girl-texts-cellular-reads-interesting-article-online-wears-casual-outfit-creats-new-publication-own-web-page-isolated-brown-wall-with-free-space-min.jpg"
+                                        class="tab__img">
+
+                                </div>
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <div class="tab-content">
+                                        <h2>01</h2>
+                                        <h3>When Creative Matters in life</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, id eius.
+                                            Fugiat fugit a quos illo aliquid ea iusto, harum voluptatum
+                                        </p>
+                                        <div class="tab-btn-1">
+                                            <a href="#" class="btn tab-btn">Get In Touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 2 -->
+                    <div id="tab-2" class="tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <img src="img/6.jpg" class="tab__img">
+                                </div>
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <div class="tab-content">
+                                        <h2>02</h2>
+                                        <h3>All We Needs Optimization to rank</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, id eius.
+                                            Fugiat fugit a quos illo aliquid ea iusto, harum voluptatum
+                                        </p>
+                                        <div class="tab-btn-2">
+                                            <a href="#" class="btn tab-btn">Get In Touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 3 -->
+                    <div id="tab-3" class="tab">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <img src="img/7.jpg" class="tab__img">
+
+                                </div>
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <div class="tab-content">
+                                        <h2>03</h2>
+                                        <h3>Design Which Make Wow</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, id eius.
+                                            Fugiat fugit a quos illo aliquid ea iusto, harum voluptatum
+                                        </p>
+                                        <div class="tab-btn-3">
+                                            <a href="#" class="btn tab-btn">Get In Touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 4 -->
+                    <div id="tab-4" class="tab">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <img src="img/8.jpg" class="tab__img">
+
+                                </div>
+                                <div class="col-lg-6 col-md-12 p-lg-0">
+                                    <div class="tab-content">
+                                        <h2>04</h2>
+                                        <h3>Development and Interactivity In Web</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, id eius.
+                                            Fugiat fugit a quos illo aliquid ea iusto, harum voluptatum
+                                        </p>
+                                        <div class="tab-btn-4">
+                                            <a href="#" class="btn tab-btn">Get In Touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Testimonial -->
+
+        <section class="testimonial__container ">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12 mt-5" data-aos="zoom-out-up" data-aos-delay="600">
+                        <div class="owl-carousel owl-theme " id="testimonial">
+                            <div class="testimonial text-center">
+                                <div class="test__img">
+                                    <img src="img/client-1.jpg" class="testimonial__img">
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti earum eaque libero
+                                    culpa commodi quos obcaecati, omnis blanditiis magnam aut?</p>
+                                <h3>Darlene</h3>
+                                <h6>Investor Branding </h6>
+                                <div class="testimonial__icon">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+
+                            <!-- Testi 2 -->
+                            <div class="testimonial text-center">
+                                <div class="test__img">
+                                    <img src="img/client-2.jpg" class="testimonial__img">
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti earum eaque libero
+                                    culpa commodi quos obcaecati, omnis blanditiis magnam aut?</p>
+                                <h3>Kristina</h3>
+                                <h6>Web Designer</h6>
+                                <div class="testimonial__icon">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+
+                            <!-- Testi 3 -->
+                            <div class="testimonial text-center">
+                                <div class="test__img">
+                                    <img src="img/client-3.jpg" class="testimonial__img">
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti earum eaque libero
+                                    culpa commodi quos obcaecati, omnis blanditiis magnam aut?</p>
+                                <h3>Nikki</h3>
+                                <h6>International Branding</h6>
+                                <div class="testimonial__icon">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+
+        <section id="contact" class="contact__container mt-5">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-12 text-center" data-aos="fade-down" data-aos-delay="600">
+                        <h3 class="section__title">Contact Us</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <!-- Form -->
+                    <div class="col-md-12 col-lg-6 mb-sm-5" data-aos="fade-right" data-aos-delay="800">
+                        <form action="">
+
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingText" placeholder="Enter Your Name">
+                                <label for="floatingText" class="label">Name</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput" class="label">Email address</label>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                    style="height: 200px"></textarea>
+                                <label for="floatingTextarea" class="label">Comments</label>
+                            </div>
+                            <button class="btn btn-blue" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <!-- Map -->
+                    <div class="col-md-12 col-lg-6 mb-sm-5" data-aos="fade-left" data-aos-delay="1200">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1910.0404752460468!2d96.17095860971914!3d16.772647697464393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed4fa90306b7%3A0xcb44ac5756e6cde4!2sUnless%20Gaming!5e0!3m2!1sen!2smm!4v1610014466365!5m2!1sen!2smm"
+                            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0" class="rounded"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+
+            <div class="footer" id="footer">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-md-6 mt-5 px-3" data-aos="fade-down" data-aos-delay="600">
+                            <a class="logo" href="#home"><i class="fas fa-meteor mb-4"></i>Meteor</a>
+                            <p class="text-white-50">
+                                Example Agency is a leading web design,<br> web hosting, social media marketing &
+                                digital <br> marketing
+                                agency.
+
+                            </p>
+                            <p class="text-white-50"> &copy; Meteor Agency | Web Design Kit</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-5 px-3" data-aos="fade-down" data-aos-delay="800">
+                            <h5 class="mb-4">CONTACT US</h5>
+                            <p class="text-white-50">
+                                Reach us at our company address, call us or drop an e-mail
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-black-50"><i
+                                            class="fas fa-paper-plane me-3"></i>kiritokirikaya80@gmail.com</a></li>
+                                <li class="mb-2"><a href="#" class="text-black-50"><i
+                                            class="fas fa-mobile me-3"></i>+9799458508</a>
+                                </li>
+                                <li class="mb-2"><a href="#" class="text-black-50"><i
+                                            class="fas fa-map-marked-alt me-3"></i>Botataung
+                                        Yangon</a></li>
+                        </div>
+
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="1200">
+                            <p>Design By La Woon Htet Aung</p>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="1500">
+                            <ul class="list-unstyled d-flex justify-content-lg-end justify-content-sm-between">
+                                <li class="mx-3"><i class="footer__icon fab fa-facebook-square"></i></li>
+                                <li class="mx-3"><i class="footer__icon fab fa-instagram"></i></li>
+                                <li class="mx-3"><i class="footer__icon fab fa-twitter-square"></i></li>
+                                <li class="mx-3"><i class="footer__icon fab fa-github-alt"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <script src="js/countUp.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.responsiveTabs.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+
+        <script>
+            //  Count
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1000,
+            });
+        </script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
